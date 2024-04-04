@@ -47,8 +47,10 @@ body {
 }
 
 .heroWrapper .heroTitle {
-    font-size: clamp(4rem, 30vw, 10rem);
-    font-family: "Winglet", sans-serif;
+    font-size: clamp(2rem, 30vw, 6rem);
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .heroWrapper .description {
@@ -113,6 +115,8 @@ body {
 .quoteWrapper .middle {
     width: 50vw;
     margin: 0 auto;
+    text-align: center;
+    padding: 4rem;
 }
 
 .quoteWrapper .middle img {
@@ -122,5 +126,74 @@ body {
 .quoteWrapper .middle p {
     font-size: clamp(20px, 3vw, 60px);
     color: var(--white);
-    font-family: "Akaya Telivigala", system-ui;
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* gallery */
+.galleryWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.galleryWrapper img {
+    width: 100%;
+    height: auto;
+}
+
+/* footer */
+
+footer {
+    background-color: var(--white);
+}
+
+footer .footerWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+footer .footerWrapper .left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer .footerWrapper .left a {
+    color: var(--bgColor);
+    font-family: "Lato", sans-serif;
+    font-weight: normal;
+}
+footer .footerWrapper .right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+footer .footerWrapper .right p {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+}
+
+footer .footerWrapper .right .icons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footerWrapper .right .icons a {
+    color: var(--bgColor);
+}
+
+/* hover */
+.galleryWrapper a:hover {
+    filter: drop-shadow(5px 5px 0px var(--white));
+    transform: translate(-5px, -5px);
 }
