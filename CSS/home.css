@@ -1,0 +1,126 @@
+/* body */
+body {
+    background-color: var(--bgColor);
+}
+
+/* hero */
+.heroWrapper {
+    height: 100vh;
+    /* background-color: rgb(71, 132, 186); */
+    position: relative;
+}
+
+.heroWrapper .models {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.heroWrapper .historyLine {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+.heroWrapper .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.heroWrapper .heroTitle,
+.heroWrapper .description,
+.heroWrapper .guide {
+    color: var(--white);
+}
+
+.heroWrapper .heroTitleSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 7rem 2rem;
+    position: relative;
+    z-index: 4;
+    width: 60%;
+}
+
+.heroWrapper .heroTitle {
+    font-size: clamp(4rem, 30vw, 10rem);
+    font-family: "Winglet", sans-serif;
+}
+
+.heroWrapper .description {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.heroWrapper .guide {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.heroWrapper .guideWrapper .arrow {
+    padding: 1rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--gold);
+}
+
+.heroWrapper .guideWrapper .arrow i {
+    transform: translate(2px, 3px);
+    color: var(--white);
+}
+
+.heroWrapper .heroTitleSection .guideWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    align-items: center;
+}
+
+.heroWrapper .heroTitleSection .guideWrapper .guide {
+    font-size: 1.5rem;
+}
+
+/* quoteWrapper */
+
+.quoteWrapper .topWrapper {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    align-content: center;
+}
+
+.quoteWrapper .topWrapper .rightImage {
+    /* margin-left: -2rem; */
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.quoteWrapper .topWrapper .leftImage {
+    /* margin-left: -2rem; */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.quoteWrapper .middle {
+    width: 50vw;
+    margin: 0 auto;
+}
+
+.quoteWrapper .middle img {
+    margin-top: 3rem;
+}
+
+.quoteWrapper .middle p {
+    font-size: clamp(20px, 3vw, 60px);
+    color: var(--white);
+    font-family: "Akaya Telivigala", system-ui;
+}

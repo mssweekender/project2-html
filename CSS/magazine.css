@@ -1,0 +1,85 @@
+.mainContent {
+    width: 90vw;
+    height: 80%;
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 90vw;
+    margin: 0 auto; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0rem 0 4rem 4rem;
+}
+
+.mainContent .texts {
+    width: 40%;
+    padding-bottom: 6rem;
+    /* height: 90%; */
+}
+
+.mainContent .models {
+    width: 50vw;
+}
+
+.mainContent .texts .years {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.mainContent .texts .description {
+    width: 100%;
+}
+
+.mainContent .texts .years {
+    width: 100%;
+}
+
+.mainContent .models {
+    height: 80vh;
+    padding: 4rem 5rem;
+}
+
+.mainContent .models img {
+    height: 90%;
+    padding-top: 4rem;
+}
+
+/* header */
+
+.otherThanHome {
+    background-color: var(--white);
+    top: 0;
+    z-index: 999;
+}
+
+.otherThanHome nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+}
+
+.otherThanHome nav .logo .magazine {
+    font-family: "Winglet", sans-serif;
+    font-size: 2rem;
+    color: var(--bgColor);
+}
+
+.otherThanHome nav .navContent {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.otherThanHome nav .navContent a {
+    text-decoration: none;
+    color: var(--bgColor);
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
