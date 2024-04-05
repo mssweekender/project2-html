@@ -1,6 +1,160 @@
+:root {
+    /* color */
+    --bgColor: #1e1e1e;
+    --white: #ffffff;
+    --gold: #bca06b;
+    --red: #bd002d;
+    --yellow: #ccff00;
+
+    --orange: #ffa70b;
+    --green: #ccff00;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Akaya+Telivigala&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+
+* {
+    transition: all 0.2s ease-in-out;
+}
+
+/* eighty's */
+
+.eighty {
+    width: 100%;
+    /* height: 100vh; */
+    background-color: #f8529a;
+    background-image: url(/Images/pink-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.mainContent .texts .years .year:nth-child(1) {
+    font-family: "Winglet", sans-serif;
+    font-size: clamp(4rem, 10vw, 10rem);
+    color: var(--red);
+}
+
+.mainContent .texts .years .year:nth-child(2) {
+    font-family: "Winglet", sans-serif;
+    font-size: 4rem;
+    color: var(--white);
+}
+.mainContent .texts .years .year:nth-child(3) {
+    font-family: "Winglet", sans-serif;
+    font-size: 3rem;
+    color: var(--white);
+}
+.mainContent .texts .years .year:nth-child(4) {
+    font-family: "Winglet", sans-serif;
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.mainContent .texts .description > p {
+    font-family: "Lato", sans-serif;
+    font-weight: lighter;
+    color: var(--white);
+    line-height: clamp(1rem, 10vw, 2rem);
+    font-size: clamp(16px, 5vw, 20px);
+}
+
+/* twenty's */
+
+.twenty {
+    width: 100%;
+    /* height: 100vh; */
+    background-color: #ad592c;
+    background-image: url(/Images/orange-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.mainContent .texts .years .year:nth-child(3) {
+    font-family: "Winglet", sans-serif;
+    font-size: clamp(4rem, 10vw, 10rem);
+    color: var(--orange);
+}
+
+.mainContent .texts .years .year:nth-child(4) {
+    font-family: "Winglet", sans-serif;
+    font-size: 4rem;
+    color: var(--bgColor);
+}
+.mainContent .texts .years .year:nth-child(2) {
+    font-family: "Winglet", sans-serif;
+    font-size: 4rem;
+    color: var(--bgColor);
+}
+.mainContent .texts .years .year:nth-child(1) {
+    font-family: "Winglet", sans-serif;
+    font-size: 2rem;
+    color: var(--bgColor);
+}
+
+.mainContent .texts .description > p {
+    font-family: "Lato", sans-serif;
+    font-weight: lighter;
+    color: var(--bgColor);
+    line-height: clamp(1rem, 10vw, 2rem);
+    font-size: clamp(16px, 5vw, 20px);
+}
+
 /* body */
 body {
     background-color: var(--bgColor);
+}
+
+.widthRestrict {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* header */
+
+header {
+    background-color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+}
+
+header nav .logo .magazine {
+    font-family: "Winglet", sans-serif;
+    font-size: 2rem;
+    color: var(--bgColor);
+}
+
+header nav .navContent {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+header nav .navContent a {
+    text-decoration: none;
+    color: var(--bgColor);
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 0.3rem;
+    /* border-bottom: 2px transparent; */
+}
+
+/* !active header */
+header .navContent .active {
+    border-bottom: 2px solid var(--bgColor);
 }
 
 /* hero */
@@ -144,6 +298,147 @@ body {
 .galleryWrapper img {
     width: 100%;
     height: auto;
+}
+
+/* !article */
+.ninety {
+    width: 100%;
+    height: fit-content;
+    /* height: 100vh; */
+    background-color: #688399;
+    background-image: url(/Images/blue-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding: 0;
+}
+
+.mainContent {
+    width: 90vw;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    /* padding: 0rem 0 4rem 4rem; */
+}
+
+.mainContent .texts {
+    width: 50%;
+}
+
+.mainContent .models {
+    width: 50vw;
+}
+
+.mainContent .texts .years {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.mainContent .texts .description {
+    width: 100%;
+}
+
+.mainContent .texts .years {
+    width: 100%;
+}
+
+.mainContent .models {
+    height: 80vh;
+    padding: 4rem 5rem;
+}
+
+.mainContent .models img {
+    height: 90%;
+    padding-top: 4rem;
+}
+
+/* header */
+
+.otherThanHome {
+    background-color: var(--white);
+    top: 0;
+    z-index: 999;
+}
+
+.otherThanHome nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+}
+
+.otherThanHome nav .logo .magazine {
+    font-family: "Winglet", sans-serif;
+    font-size: 2rem;
+    color: var(--bgColor);
+}
+
+.otherThanHome nav .navContent {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.otherThanHome nav .navContent a {
+    text-decoration: none;
+    color: var(--bgColor);
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.mainContent .texts .years .year:nth-child(1) {
+    font-family: "Acme", sans-serif;
+    font-size: clamp(4rem, 10vw, 10rem);
+    filter: drop-shadow(10px 5px 0 var(--white));
+    color: var(--bgColor);
+}
+
+.mainContent .texts .description > p {
+    font-family: "Lato", sans-serif;
+    font-weight: lighter;
+    color: var(--bgColor);
+    line-height: clamp(1rem, 10vw, 2rem);
+    font-size: clamp(16px, 5vw, 20px);
+}
+
+/* article */
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.articles article {
+    padding: 3rem 6rem;
+}
+
+.articles article h2 {
+    font-family: "Acme", sans-serif;
+    padding: 2rem 0;
+    font-size: clamp(20px, 5vw, 30px);
+}
+
+.articles article:nth-child(1) {
+    background-color: #314351;
+    color: var(--white);
+}
+
+.articles article p {
+    line-height: clamp(1rem, 10vw, 2rem);
+    font-size: clamp(16px, 5vw, 20px);
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+    line-height: 3rem;
+}
+.articles article:nth-child(2) {
+    background-color: #688399;
 }
 
 /* footer */
