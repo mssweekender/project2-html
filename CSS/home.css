@@ -5,7 +5,7 @@ body {
 
 /* hero */
 .heroWrapper {
-    height: 100vh;
+    height: 1000px;
     /* background-color: rgb(71, 132, 186); */
     position: relative;
 }
@@ -138,6 +138,7 @@ body {
     gap: 1rem;
     width: 70%;
     margin: 0 auto;
+    padding: 5rem 0;
 }
 
 .galleryWrapper img {
@@ -155,7 +156,7 @@ footer .footerWrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2rem 0;
+    padding: 2rem 10rem;
 }
 
 footer .footerWrapper .left {
@@ -196,4 +197,73 @@ footer .footerWrapper .right .icons a {
 .galleryWrapper a:hover {
     filter: drop-shadow(5px 5px 0px var(--white));
     transform: translate(-5px, -5px);
+}
+
+/* contact */
+
+.contactWrapper {
+    background-image: url(/Images/contact-bg.png);
+    background-color: #ad592c;
+    height: 100vh;
+}
+
+.contactWrapper header {
+    position: static;
+}
+
+.contactWrapper .contactForm {
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    font-family: "Lato", sans-serif;
+    color: var(--white);
+    padding: 5rem 0;
+}
+
+.contactWrapper .contactForm .formTitle {
+    font-family: "Acme", sans-serif;
+    font-size: 5rem;
+    color: #d09123;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.contactWrapper .contactForm form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 3rem 5rem;
+    background-color: #d09123;
+    border-radius: 30px;
+    filter: drop-shadow(10px 5px 0 var(--bgColor));
+}
+
+.contactWrapper .contactForm form input,
+.contactWrapper .contactForm form textarea {
+    border: none;
+    padding: 1rem 0.5rem;
+    width: 100%;
+}
+
+.contactWrapper .contactForm button {
+    width: 30%;
+    background-color: #ad592c;
+    border: none;
+    padding: 1rem 2rem;
+    text-align: center;
+    border-radius: 30px;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.contactWrapper .contactForm button:hover {
+    cursor: pointer;
+}
+
+.contactWrapper footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
 }
