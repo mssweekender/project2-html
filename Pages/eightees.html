@@ -5,22 +5,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>1980's</title>
         <link rel="stylesheet" href="/CSS/reset.css" />
-        <link rel="stylesheet" href="/CSS/magazine.css" />
-        <link rel="stylesheet" href="/CSS/eighteens.css" />
+        <link rel="stylesheet" href="/CSS/home.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
-        <header class="otherThanHome">
+        <header>
             <nav class="widthRestrict">
                 <div class="logo">
                     <h1 class="magazine">MAGAZINE</h1>
                 </div>
                 <div class="navContent">
                     <a href="./home.html">HOME</a
-                    ><a href="./eightees.html">1980's</a
-                    ><a href="./ninetys.html">1990's</a
-                    ><a href="./twenty.html">2000's</a
-                    ><a href="./present.html">Present</a
-                    ><a href="./references.html">REFERENCES</a>
+                    ><a href="story.html">ARTICLE</a
+                    ><a href="/Pages/contact.html" class="active">CONTACT</a
+                    ><a href="./source.html">SOURCE</a>
+                    <section class="search-bar">
+                        <form>
+                            <input type="text" placeholder="Search" />
+                            <button type="submit">Search</button>
+                        </form>
+                    </section>
                 </div>
             </nav>
         </header>
@@ -29,9 +45,6 @@
                 <div class="texts">
                     <div class="years">
                         <h2 class="year">1980'S</h2>
-                        <h2 class="year">1990'S</h2>
-                        <h2 class="year">2000'S</h2>
-                        <h2 class="year">PRESENT</h2>
                     </div>
                     <div class="description">
                         <p>
@@ -56,5 +69,22 @@
                 </div>
             </div>
         </section>
+        <footer>
+            <div class="footerWrapper widthRestrict">
+                <div class="left">
+                    <a href="/Pages/ninetys.html">Article</a
+                    ><a href="/Pages/contact.html">Contact</a
+                    ><a href="">Source</a>
+                </div>
+                <div class="right">
+                    <p>Follow us at:</p>
+                    <div class="icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a
+                        ><a href=""><i class="fa-brands fa-twitter"></i></a
+                        ><a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
