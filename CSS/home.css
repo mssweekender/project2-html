@@ -1,0 +1,707 @@
+/* !reset CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ! fonts */
+/* acme & Montserrat & lato*/
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Akaya+Telivigala&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* .acme-regular {
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
+/* .montserrat-<uniquifier> {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  } */
+/* winglet */
+@font-face {
+    font-family: "Winglet";
+    src: url("../winglet/Winglet.otf") format("woff2");
+}
+
+/* body {
+    font-family: 'Winglet', sans-serif;
+  } */
+
+/* !main CSS start */
+
+:root {
+    /* color */
+    --bgColor: #1e1e1e;
+    --white: #ffffff;
+    --gold: #bca06b;
+    --red: #bd002d;
+    --yellow: #ccff00;
+
+    --orange: #ffa70b;
+    --green: #ccff00;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Akaya+Telivigala&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+
+* {
+    transition: all 0.2s ease-in-out;
+}
+
+/* eighty's */
+
+.eighty {
+    width: 100%;
+    /* height: 100vh; */
+    background-color: #f8529a;
+    background-image: url(/Images/pink-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.mainContent .texts .years .year:nth-child(1) {
+    font-family: "Winglet", sans-serif;
+    font-size: clamp(4rem, 10vw, 10rem);
+    color: var(--red);
+}
+
+.mainContent .texts .years .year:nth-child(2) {
+    font-family: "Winglet", sans-serif;
+    font-size: 4rem;
+    color: var(--white);
+}
+.mainContent .texts .years .year:nth-child(3) {
+    font-family: "Winglet", sans-serif;
+    font-size: 3rem;
+    color: var(--white);
+}
+.mainContent .texts .years .year:nth-child(4) {
+    font-family: "Winglet", sans-serif;
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.mainContent .texts .description > p {
+    font-family: "Lato", sans-serif;
+    font-weight: lighter;
+    color: var(--white);
+    line-height: clamp(1rem, 10vw, 2rem);
+    font-size: clamp(16px, 5vw, 20px);
+}
+
+/* twenty's */
+
+.twenty {
+    width: 100%;
+    /* height: 100vh; */
+    background-color: #ad592c;
+    background-image: url(/Images/orange-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.mainContent .texts .years .year:nth-child(3) {
+    font-family: "Winglet", sans-serif;
+    font-size: clamp(4rem, 10vw, 10rem);
+    color: var(--orange);
+}
+
+.mainContent .texts .years .year:nth-child(4) {
+    font-family: "Winglet", sans-serif;
+    font-size: 4rem;
+    color: var(--bgColor);
+}
+.mainContent .texts .years .year:nth-child(2) {
+    font-family: "Winglet", sans-serif;
+    font-size: 4rem;
+    color: var(--bgColor);
+}
+.mainContent .texts .years .year:nth-child(1) {
+    font-family: "Winglet", sans-serif;
+    font-size: 2rem;
+    color: var(--bgColor);
+}
+
+.mainContent .texts .description > p {
+    font-family: "Lato", sans-serif;
+    font-weight: lighter;
+    color: var(--bgColor);
+    line-height: clamp(1rem, 10vw, 2rem);
+    font-size: clamp(16px, 5vw, 20px);
+}
+
+/* body */
+body {
+    background-color: var(--bgColor);
+}
+
+.widthRestrict {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* header */
+
+header {
+    background-color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+}
+
+header nav .logo .magazine {
+    font-family: "Winglet", sans-serif;
+    font-size: 2rem;
+    color: var(--bgColor);
+}
+
+header nav .navContent {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+header nav .navContent a {
+    text-decoration: none;
+    color: var(--bgColor);
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 0.3rem;
+    /* border-bottom: 2px transparent; */
+}
+
+/* !active header */
+header .navContent .active {
+    border-bottom: 2px solid var(--bgColor);
+}
+
+/* hero */
+.heroWrapper {
+    height: 1000px;
+    /* background-color: rgb(71, 132, 186); */
+    position: relative;
+}
+
+.heroWrapper .models {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.heroWrapper .historyLine {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+.heroWrapper .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.heroWrapper .heroTitle,
+.heroWrapper .description,
+.heroWrapper .guide {
+    color: var(--white);
+}
+
+.heroWrapper .heroTitleSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 7rem 2rem;
+    position: relative;
+    z-index: 4;
+    width: 60%;
+}
+
+.heroWrapper .heroTitle {
+    font-size: clamp(2rem, 30vw, 6rem);
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.heroWrapper .description {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.heroWrapper .guide {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.heroWrapper .heroTitleSection .guideWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    align-items: center;
+}
+
+.heroWrapper .heroTitleSection .guideWrapper .guide {
+    font-size: 1.5rem;
+}
+
+/* quoteWrapper */
+
+.quoteWrapper .topWrapper {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    align-content: center;
+}
+
+.quoteWrapper .topWrapper .rightImage {
+    /* margin-left: -2rem; */
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.quoteWrapper .topWrapper .leftImage {
+    /* margin-left: -2rem; */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.quoteWrapper .middle {
+    width: 50vw;
+    margin: 0 auto;
+    text-align: center;
+    padding: 4rem;
+}
+
+.quoteWrapper .middle img {
+    margin-top: 3rem;
+}
+
+.quoteWrapper .middle p {
+    font-size: clamp(20px, 3vw, 60px);
+    color: var(--white);
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* gallery */
+.galleryWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 70%;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+.galleryWrapper img {
+    width: 100%;
+    height: auto;
+}
+
+/* !article */
+.ninety {
+    width: 100%;
+    height: fit-content;
+    /* height: 100vh; */
+    background-color: #688399;
+    background-image: url(/Images/blue-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding: 0;
+}
+
+.mainContent {
+    width: 90vw;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    /* padding: 0rem 0 4rem 4rem; */
+}
+
+.mainContent .texts {
+    width: 50%;
+}
+
+.mainContent .models {
+    width: 50vw;
+}
+
+.mainContent .texts .years {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.mainContent .texts .description {
+    width: 100%;
+}
+
+.mainContent .texts .years {
+    width: 100%;
+}
+
+.mainContent .models {
+    height: 80vh;
+    padding: 4rem 5rem;
+}
+
+.mainContent .models img {
+    height: 90%;
+    padding-top: 4rem;
+}
+
+/* header */
+
+.otherThanHome {
+    background-color: var(--white);
+    top: 0;
+    z-index: 999;
+}
+
+.otherThanHome nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+}
+
+.otherThanHome nav .logo .magazine {
+    font-family: "Winglet", sans-serif;
+    font-size: 2rem;
+    color: var(--bgColor);
+}
+
+.otherThanHome nav .navContent {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.otherThanHome nav .navContent a {
+    text-decoration: none;
+    color: var(--bgColor);
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.mainContent .texts .years .year:nth-child(1) {
+    font-family: "Acme", sans-serif;
+    font-size: clamp(4rem, 10vw, 10rem);
+    filter: drop-shadow(10px 5px 0 var(--white));
+    color: var(--bgColor);
+}
+
+.mainContent .texts .description > p {
+    font-family: "Lato", sans-serif;
+    font-weight: lighter;
+    color: var(--bgColor);
+    line-height: clamp(1rem, 10vw, 2rem);
+    font-size: clamp(16px, 5vw, 20px);
+}
+
+/* article */
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.articles article {
+    padding: 3rem 6rem;
+}
+
+.articles article h2 {
+    font-family: "Acme", sans-serif;
+    padding: 2rem 0;
+    font-size: clamp(20px, 5vw, 30px);
+}
+
+.articles article:nth-child(1) {
+    background-color: #314351;
+    color: var(--white);
+}
+
+.articles article p {
+    line-height: clamp(1rem, 10vw, 2rem);
+    font-size: clamp(16px, 5vw, 20px);
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+    line-height: 3rem;
+}
+.articles article:nth-child(2) {
+    background-color: #688399;
+}
+
+/* footer */
+
+footer {
+    background-color: var(--white);
+}
+
+footer .footerWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 10rem;
+}
+
+footer .footerWrapper .left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer .footerWrapper .left a {
+    color: var(--bgColor);
+    font-family: "Lato", sans-serif;
+    font-weight: normal;
+}
+footer .footerWrapper .right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+footer .footerWrapper .right p {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+}
+
+footer .footerWrapper .right .icons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footerWrapper .right .icons a {
+    color: var(--bgColor);
+}
+
+/* hover */
+.galleryWrapper a:hover {
+    filter: drop-shadow(5px 5px 0px var(--white));
+    transform: translate(-5px, -5px);
+}
+
+/* contact */
+
+.contactWrapper {
+    background-image: url(/Images/contact-bg.png);
+    background-color: #ad592c;
+    height: 100vh;
+}
+
+.contactWrapper header {
+    position: static;
+}
+
+.contactWrapper .contactForm {
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    font-family: "Lato", sans-serif;
+    color: var(--white);
+    padding: 5rem 0;
+}
+
+.contactWrapper .contactForm .formTitle {
+    font-family: "Acme", sans-serif;
+    font-size: 5rem;
+    color: #d09123;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.contactWrapper .contactForm form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 3rem 5rem;
+    background-color: #d09123;
+    border-radius: 30px;
+    filter: drop-shadow(10px 5px 0 var(--bgColor));
+}
+
+.contactWrapper .contactForm form input,
+.contactWrapper .contactForm form textarea {
+    border: none;
+    padding: 1rem 0.5rem;
+    width: 100%;
+}
+
+.contactWrapper .contactForm button {
+    width: 30%;
+    background-color: #ad592c;
+    border: none;
+    padding: 1rem 2rem;
+    text-align: center;
+    border-radius: 30px;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.contactWrapper .contactForm button:hover {
+    cursor: pointer;
+}
+
+.contactWrapper footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
