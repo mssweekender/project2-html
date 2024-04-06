@@ -187,33 +187,10 @@ a {
 }
 
 .mainContent .texts .years .year:nth-child(1) {
-    font-family: "Winglet", sans-serif;
+    /* font-family: "Winglet", sans-serif; */
+    font-family: "Acme", sans-serif;
     font-size: clamp(4rem, 10vw, 10rem);
     color: var(--red);
-}
-
-.mainContent .texts .years .year:nth-child(2) {
-    font-family: "Winglet", sans-serif;
-    font-size: 4rem;
-    color: var(--white);
-}
-.mainContent .texts .years .year:nth-child(3) {
-    font-family: "Winglet", sans-serif;
-    font-size: 3rem;
-    color: var(--white);
-}
-.mainContent .texts .years .year:nth-child(4) {
-    font-family: "Winglet", sans-serif;
-    font-size: 2rem;
-    color: var(--white);
-}
-
-.mainContent .texts .description > p {
-    font-family: "Lato", sans-serif;
-    font-weight: lighter;
-    color: var(--white);
-    line-height: clamp(1rem, 10vw, 2rem);
-    font-size: clamp(16px, 5vw, 20px);
 }
 
 /* twenty's */
@@ -418,6 +395,7 @@ header .navContent .active {
 
 .quoteWrapper .middle img {
     margin-top: 3rem;
+    width: 100%;
 }
 
 .quoteWrapper .middle p {
@@ -635,73 +613,4 @@ footer .footerWrapper .right .icons a {
 .galleryWrapper a:hover {
     filter: drop-shadow(5px 5px 0px var(--white));
     transform: translate(-5px, -5px);
-}
-
-/* contact */
-
-.contactWrapper {
-    background-image: url(/Images/contact-bg.png);
-    background-color: #ad592c;
-    height: 100vh;
-}
-
-.contactWrapper header {
-    position: static;
-}
-
-.contactWrapper .contactForm {
-    max-width: 600px;
-    height: auto;
-    margin: 0 auto;
-    font-family: "Lato", sans-serif;
-    color: var(--white);
-    padding: 5rem 0;
-}
-
-.contactWrapper .contactForm .formTitle {
-    font-family: "Acme", sans-serif;
-    font-size: 5rem;
-    color: #d09123;
-    text-align: center;
-    padding-bottom: 3rem;
-}
-
-.contactWrapper .contactForm form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1.5rem;
-    padding: 3rem 5rem;
-    background-color: #d09123;
-    border-radius: 30px;
-    filter: drop-shadow(10px 5px 0 var(--bgColor));
-}
-
-.contactWrapper .contactForm form input,
-.contactWrapper .contactForm form textarea {
-    border: none;
-    padding: 1rem 0.5rem;
-    width: 100%;
-}
-
-.contactWrapper .contactForm button {
-    width: 30%;
-    background-color: #ad592c;
-    border: none;
-    padding: 1rem 2rem;
-    text-align: center;
-    border-radius: 30px;
-    color: var(--white);
-    font-weight: bold;
-}
-
-.contactWrapper .contactForm button:hover {
-    cursor: pointer;
-}
-
-.contactWrapper footer {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
 }
