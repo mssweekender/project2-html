@@ -102,6 +102,7 @@ body {
 /* body */
 body {
     background-color: var(--bgColor);
+    height: 100%;
 }
 
 .widthRestrict {
@@ -460,7 +461,9 @@ footer .footerWrapper .right .icons a {
 .contactWrapper {
     background-image: url(/Images/contact-bg.png);
     background-color: #ad592c;
-    /* height: 100vh; */
+    /* background-repeat: repeat; */
+    background-size: cover;
+    height: 100vh;
 }
 
 .contactWrapper header {
@@ -469,6 +472,7 @@ footer .footerWrapper .right .icons a {
 
 .contactWrapper .contactForm {
     max-width: 600px;
+    width: 80%;
     height: auto;
     margin: 0 auto;
     font-family: "Lato", sans-serif;
@@ -498,7 +502,7 @@ footer .footerWrapper .right .icons a {
 .contactWrapper .contactForm form input,
 .contactWrapper .contactForm form textarea {
     border: none;
-    padding: 1rem 0.5rem;
+    /* padding: 1rem 0.5rem; */
     width: 100%;
 }
 
@@ -515,14 +519,6 @@ footer .footerWrapper .right .icons a {
 
 .contactWrapper .contactForm button:hover {
     cursor: pointer;
-}
-
-.contactWrapper footer {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: auto;
 }
 
 /* .contactWrapper footer {
