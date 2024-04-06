@@ -750,3 +750,202 @@ footer .footerWrapper .right .icons a {
   line-height: clamp(1rem, 10vw, 2rem);
   font-size: clamp(16px, 5vw, 20px);
 }
+
+@media only screen and (max-width: 1024px) {
+  /* Adjust header styles for tablet */
+  header nav .navContent {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  header nav .navContent a {
+    margin-bottom: 1rem;
+  }
+
+  /* Adjust hero section styles for tablet */
+  .heroWrapper .heroTitleSection {
+    width: 80%;
+  }
+
+  /* Adjust gallery styles for tablet */
+  .galleryWrapper {
+    width: 90%;
+  }
+
+  /* Adjust footer styles for tablet */
+  footer .footerWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Adjust header styles for mobile */
+  header nav {
+    padding: 1rem;
+  }
+  
+  header nav .navContent {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header nav .navContent a {
+    margin-bottom: 1rem;
+  }
+
+  /* Adjust hero section styles for mobile */
+  .heroWrapper .heroTitleSection {
+    width: 90%;
+  }
+
+  /* Adjust gallery styles for mobile */
+  .galleryWrapper {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Adjust footer styles for mobile */
+  footer .footerWrapper {
+    padding: 1rem;
+  }
+}
+
+
+
+
+
+
+
+/* For mobile devices */
+@media only screen and (max-width: 768px) {
+  /* Adjust header styles for mobile */
+  header nav {
+    padding: 1rem;
+  }
+  
+  header nav .navContent {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header nav .navContent a {
+    margin-bottom: 1rem;
+  }
+
+  /* Adjust hero section styles for mobile */
+  .heroWrapper .heroTitleSection {
+    width: 90%;
+  }
+
+  /* Adjust gallery styles for mobile */
+  .galleryWrapper {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Adjust footer styles for mobile */
+  footer .footerWrapper {
+    padding: 1rem;
+  }
+
+  /* Other styles for mobile */
+}
+
+/* For tablet devices */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Adjust header styles for tablet */
+  header nav .navContent {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  header nav .navContent a {
+    margin-bottom: 1rem;
+  }
+
+  /* Adjust hero section styles for tablet */
+  .heroWrapper .heroTitleSection {
+    width: 80%;
+  }
+
+  /* Adjust gallery styles for tablet */
+  .galleryWrapper {
+    width: 90%;
+  }
+
+  /* Adjust footer styles for tablet */
+  footer .footerWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Other styles for tablet */
+}
+
+/* For small screens */
+@media only screen and (max-width: 480px) {
+  /* Additional adjustments for smaller screens */
+}
+
+/* For large screens */
+@media only screen and (min-width: 1025px) {
+  /* Additional adjustments for larger screens */
+}
+
+
+
+
+/* Original header styles */
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+}
+
+header nav .navContent {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+/* Keep logo centered */
+header nav .logo {
+  text-align: center;
+}
+
+/* Adjust header styles for tablet and mobile */
+@media only screen and (max-width: 1024px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+  }
+
+  header nav .logo {
+    order: -1; /* Move the logo to the top */
+    margin-bottom: 1rem; /* Add some spacing between the logo and links */
+  }
+
+  header nav .navContent {
+    margin-top: 1rem; /* Add some margin between logo and links */
+    flex-direction: column; /* Change the direction to column for mobile */
+    gap: 0.5rem; /* Reduce the gap between items */
+    text-align: center; /* Center the items */
+  }
+
+  /* Keep search button beside search bar */
+  header nav .navContent .search-bar {
+    width: 100%; /* Ensure search bar takes full width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header nav .navContent .search-bar button {
+    margin-left: 0.5rem; /* Add some spacing between search bar and button */
+  }
+}
