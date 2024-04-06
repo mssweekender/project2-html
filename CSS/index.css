@@ -739,7 +739,7 @@ footer .footerWrapper .right .icons a {
 }
 .mainContent .texts .years .year:nth-child(1) {
   font-family: "Winglet", sans-serif;
-  font-size: 2rem;
+  font-size: 10rem;
   color: var(--bgColor);
 }
 
