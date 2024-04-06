@@ -1,156 +1,127 @@
 /* Global Styles */
-body {
-    font-family: "Raleway", sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    padding: 20px;
-    text-align: center;
-    background-color: #fff;
-    color: rgb(56, 56, 56);
-  }
-  
-  header h1 {
+
+h1 {
     margin: 0;
     font-size: 8rem;
     font-family: "Times New Roman", Times, serif;
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 20px 0;
-    padding: 0;
-  }
-  
-  nav li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-  
-  nav a {
-    color: #000000;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  .search-bar {
+    text-align: center;
+}
+
+.search-bar {
     text-align: center;
     margin-bottom: 20px;
-  }
-  
-  .search-bar input {
+}
+
+.search-bar input {
     padding: 5px;
-  }
-  
-  .search-bar button {
+}
+
+.search-bar button {
     padding: 5px 10px;
     background-color: #555;
     color: #fff;
     border: none;
-  }
-  
-  /* main */
-  
-  img {
+}
+
+/* main */
+
+img {
     max-width: 100%;
     border-radius: 10px;
-  }
-  
-  .teaser-articles {
+}
+
+.teaser-articles {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 2rem;
     padding: 1rem;
     margin: 1rem;
-  }
-  
-  /* Footer */
-  footer {
+}
+
+/* Footer */
+footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px 0;
-  }
-  
-  #contact {
+}
+
+#contact {
     margin-bottom: 30px;
-  }
-  
-  #contact h2 {
+}
+
+#contact h2 {
     font-size: 24px;
     margin-bottom: 10px;
-  }
-  
-  #contact ul {
+}
+
+#contact ul {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  #contact li {
+}
+
+#contact li {
     margin: 10px 0;
-  }
-  
-  #contact span {
+}
+
+#contact span {
     font-weight: bold;
     margin-right: 10px;
-  }
-  
-  #contact a {
+}
+
+#contact a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-  }
-  
-  .table-container {
+}
+
+.table-container {
     margin: 0 auto;
     width: 80%;
-  }
-  
-  table {
+}
+
+table {
     border-collapse: collapse;
     width: 100%;
-  }
-  
-  caption {
+}
+
+caption {
     margin-bottom: 0.5rem;
-  }
-  
-  th,
-  td {
+}
+
+th,
+td {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
-  }
-  
-  th {
+}
+
+th {
     background-color: #f2f2f2;
-  }
-  
-  /* Media Queries */
-  @media (max-width: 768px) {
-    header h1 {
-      font-size: 30px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px;
     }
-  
+
     nav li {
-      margin-right: 15px;
+        margin-right: 15px;
     }
-  
+
     .teaser-articles {
-      flex-wrap: wrap;
-      justify-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-  
+
     .teaser-articles .image-container {
-      text-align: center;
+        text-align: center;
     }
-  
+
     /* Mobile-friendly adjustments */
     .teaser-articles img {
-      max-width: 80%;
+        max-width: 80%;
     }
-  }
-  
+}

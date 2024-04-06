@@ -169,6 +169,10 @@ header .navContent .active {
     z-index: 3;
 }
 
+.heroWrapper .models_mobile {
+    display: none;
+}
+
 .heroWrapper .historyLine {
     position: absolute;
     bottom: 0;
@@ -273,6 +277,7 @@ header .navContent .active {
 
 .quoteWrapper .middle img {
     margin-top: 3rem;
+    width: 100%;
 }
 
 .quoteWrapper .middle p {
@@ -572,27 +577,84 @@ footer .footerWrapper .right .icons a {
 .present {
     width: 100%;
     /* height: 100vh; */
-    background-color: #238138;
+    /* background-color: #238138; */
     background-image: url(/Images/green-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
 }
 
-/* media query */
+/* !media query */
 /* mobile */
 
 @media screen and (max-width: 480px) {
 }
 
 /* tablet */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
+    /* !home */
+
+    body {
+        width: 100%;
+    }
+    .heroWrapper {
+        height: auto;
+        width: 100%;
+    }
+
+    .heroWrapper .heroTitleSection {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        position: static;
+        padding: 3rem 0;
+    }
+
+    .heroWrapper .heroTitle {
+        font-size: 2rem;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        /* background-color: #238138; */
+    }
+    .heroWrapper .models {
+        position: static;
+        display: none;
+    }
+
+    .heroWrapper .models_mobile {
+        display: block;
+        margin: 0 auto;
+    }
+    .heroWrapper .historyLine {
+        display: none;
+    }
+    .heroWrapper .wave {
+        display: none;
+    }
+    .quoteWrapper .middle {
+        width: 70vw;
+        text-align: center;
+        padding: 3rem;
+    }
+    .quoteWrapper .middle img {
+        display: none;
+    }
+    .galleryWrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* !eighty's */
+    /* !present */
+    /* !story */
+    /* !404 */
 }
 
 /* desktop */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1024px) {
 }
 
 /* large */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1200px) {
 }
