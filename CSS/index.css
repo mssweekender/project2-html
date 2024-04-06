@@ -87,36 +87,6 @@ body {
     background-position: bottom;
 }
 
-.mainContent .texts .years .year:nth-child(1) {
-    font-family: "Winglet", sans-serif;
-    font-size: clamp(4rem, 10vw, 10rem);
-    color: var(--red);
-}
-
-.mainContent .texts .years .year:nth-child(2) {
-    font-family: "Winglet", sans-serif;
-    font-size: 4rem;
-    color: var(--white);
-}
-.mainContent .texts .years .year:nth-child(3) {
-    font-family: "Winglet", sans-serif;
-    font-size: 3rem;
-    color: var(--white);
-}
-.mainContent .texts .years .year:nth-child(4) {
-    font-family: "Winglet", sans-serif;
-    font-size: 2rem;
-    color: var(--white);
-}
-
-.mainContent .texts .description > p {
-    font-family: "Lato", sans-serif;
-    font-weight: lighter;
-    color: var(--white);
-    line-height: clamp(1rem, 10vw, 2rem);
-    font-size: clamp(16px, 5vw, 20px);
-}
-
 /* twenty's */
 
 .twenty {
@@ -127,36 +97,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-}
-
-.mainContent .texts .years .year:nth-child(3) {
-    font-family: "Winglet", sans-serif;
-    font-size: clamp(4rem, 10vw, 10rem);
-    color: var(--orange);
-}
-
-.mainContent .texts .years .year:nth-child(4) {
-    font-family: "Winglet", sans-serif;
-    font-size: 4rem;
-    color: var(--bgColor);
-}
-.mainContent .texts .years .year:nth-child(2) {
-    font-family: "Winglet", sans-serif;
-    font-size: 4rem;
-    color: var(--bgColor);
-}
-.mainContent .texts .years .year:nth-child(1) {
-    font-family: "Winglet", sans-serif;
-    font-size: 2rem;
-    color: var(--bgColor);
-}
-
-.mainContent .texts .description > p {
-    font-family: "Lato", sans-serif;
-    font-weight: lighter;
-    color: var(--bgColor);
-    line-height: clamp(1rem, 10vw, 2rem);
-    font-size: clamp(16px, 5vw, 20px);
 }
 
 /* body */
@@ -188,7 +128,7 @@ header nav {
 
 header nav .logo .magazine {
     font-family: "Winglet", sans-serif;
-    font-size: 4rem;
+    font-size: 2rem;
     color: var(--bgColor);
 }
 
@@ -413,43 +353,6 @@ header .navContent .active {
     padding-top: 4rem;
 }
 
-/* header */
-
-.otherThanHome {
-    background-color: var(--white);
-    top: 0;
-    z-index: 999;
-}
-
-.otherThanHome nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 3rem;
-}
-
-.otherThanHome nav .logo .magazine {
-    font-family: "Winglet", sans-serif;
-    font-size: 2rem;
-    color: var(--bgColor);
-}
-
-.otherThanHome nav .navContent {
-    display: flex;
-    flex-direction: row;
-    gap: 1.5rem;
-    align-items: center;
-}
-
-.otherThanHome nav .navContent a {
-    text-decoration: none;
-    color: var(--bgColor);
-    font-family: "Acme", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
 .mainContent .texts .years .year:nth-child(1) {
     font-family: "Acme", sans-serif;
     font-size: clamp(4rem, 10vw, 10rem);
@@ -557,7 +460,7 @@ footer .footerWrapper .right .icons a {
 .contactWrapper {
     background-image: url(/Images/contact-bg.png);
     background-color: #ad592c;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .contactWrapper header {
@@ -616,59 +519,20 @@ footer .footerWrapper .right .icons a {
 
 .contactWrapper footer {
     position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+/* .contactWrapper footer {
+    position: absolute;
     bottom: 0;
     right: 0;
     width: 100%;
-}
+} */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-.mainContent {
-    width: 90vw;
-    height: 80%;
-    /* display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  width: 90vw;
-  margin: 0 auto; */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 0 auto;
-    /* padding: 0rem 0 4rem 4rem; */
-}
-
-.mainContent .texts {
-    width: 50%;
-}
-
-.mainContent .models {
-    width: 50vw;
-}
-
-.mainContent .texts .years {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
-.mainContent .texts .description {
-    width: 100%;
-}
-
-.mainContent .texts .years {
-    width: 100%;
-}
-
-.mainContent .models {
-    height: 80vh;
-    padding: 4rem 5rem;
-}
-
-.mainContent .models img {
-    height: 90%;
-    padding-top: 4rem;
-}
 
 /* header */
 
@@ -719,32 +583,20 @@ footer .footerWrapper .right .icons a {
     background-position: bottom;
 }
 
-.mainContent .texts .years .year:nth-child(4) {
-    font-family: "Winglet", sans-serif;
-    font-size: clamp(4rem, 10vw, 10rem);
-    color: var(--green);
+/* media query */
+/* mobile */
+
+@media screen and (max-width: 480px) {
 }
 
-.mainContent .texts .years .year:nth-child(3) {
-    font-family: "Winglet", sans-serif;
-    font-size: 4rem;
-    color: var(--bgColor);
-}
-.mainContent .texts .years .year:nth-child(2) {
-    font-family: "Winglet", sans-serif;
-    font-size: 3rem;
-    color: var(--bgColor);
-}
-.mainContent .texts .years .year:nth-child(1) {
-    font-family: "Winglet", sans-serif;
-    font-size: 2rem;
-    color: var(--bgColor);
+/* tablet */
+@media screen and (max-width: 480px) {
 }
 
-.mainContent .texts .description > p {
-    font-family: "Lato", sans-serif;
-    font-weight: lighter;
-    color: var(--bgColor);
-    line-height: clamp(1rem, 10vw, 2rem);
-    font-size: clamp(16px, 5vw, 20px);
+/* desktop */
+@media screen and (max-width: 480px) {
+}
+
+/* large */
+@media screen and (max-width: 480px) {
 }
